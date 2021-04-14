@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <h1 style="text-align: center;">Form</h1>
+    <mat-card>
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="enteredName" placeholder="Enter Name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="enteredTitle" placeholder="Enter Title">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput rows="6" [(ngModel)]="enteredContent" placeholder="Enter Subject"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" (click)="onAddPost()">Save Post</button>
+    </mat-card>
+</div>
